@@ -227,7 +227,22 @@ void MainWindow::on_pushButton_7_clicked()
 
 void MainWindow::on_myTestButton_clicked()
 {
-    winAbout = new TestDialog(this);
-    winAbout->show();
+//    printf("OpenCV: %s", cv::getBuildInformation().c_str());
+
+    cv::Mat test = Mat::zeros(500,500,CV_8UC3);
+
+    cv::namedWindow( "Display window", WINDOW_AUTOSIZE );// Create a window for display.
+    cv::imshow( "Display window", test );                   // Show our image inside it.
+
+    waitKey(0);                                          // Wait for a keystroke in the window
+    return;
 
 }
+
+
+
+
+
+
+
+
