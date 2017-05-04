@@ -231,8 +231,8 @@ void MainWindow::on_myTestButton_clicked()
 
     cv::Mat test = Mat::zeros(500,500,CV_8UC3);
 
-//    cv::namedWindow( "Display window", WINDOW_AUTOSIZE );// Create a window for display.
-//    cv::imshow( "Display window", test );                   // Show our image inside it.
+    cv::namedWindow( "Display window", WINDOW_AUTOSIZE );// Create a window for display.
+    cv::imshow( "Display window", test );                   // Show our image inside it.
 
     //waitKey(0);                                          // Wait for a keystroke in the window
     return;
