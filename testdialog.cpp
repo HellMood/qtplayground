@@ -1,12 +1,12 @@
 #include "testdialog.h"
 #include "ui_testdialog.h"
-#include <Rcpp.h>
+//#include <Rcpp.h>
 
 TestDialog::TestDialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::TestDialog)
 {
-    ui->setupUi(this);
+    //ui->setupUi(this);
 }
 
 TestDialog::~TestDialog()
@@ -16,7 +16,7 @@ TestDialog::~TestDialog()
 
 void _r_test ()
 {
-    double test = R::rpois(1.2);
+    //double test = R::rpois(1.2);
 
 }
 

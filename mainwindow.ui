@@ -1226,8 +1226,8 @@ QProgressBar::chunk {
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>720</y>
+      <x>70</x>
+      <y>620</y>
       <width>91</width>
       <height>27</height>
      </rect>
@@ -1236,14 +1236,14 @@ QProgressBar::chunk {
      <string>Quit</string>
     </property>
     <property name="shortcut">
-     <string>Esc, F1, F2</string>
+     <string>Esc</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
       <x>260</x>
-      <y>640</y>
+      <y>610</y>
       <width>91</width>
       <height>25</height>
      </rect>
@@ -1281,7 +1281,7 @@ QProgressBar::chunk {
     <property name="geometry">
      <rect>
       <x>260</x>
-      <y>610</y>
+      <y>580</y>
       <width>91</width>
       <height>25</height>
      </rect>
@@ -1334,8 +1334,8 @@ QProgressBar::chunk {
    <widget class="QPushButton" name="pushButton_4">
     <property name="geometry">
      <rect>
-      <x>610</x>
-      <y>700</y>
+      <x>590</x>
+      <y>650</y>
       <width>89</width>
       <height>25</height>
      </rect>
@@ -1347,8 +1347,8 @@ QProgressBar::chunk {
    <widget class="QScrollBar" name="horizontalScrollBar">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>640</y>
+      <x>540</x>
+      <y>590</y>
       <width>160</width>
       <height>16</height>
      </rect>
@@ -1366,8 +1366,8 @@ QProgressBar::chunk {
    <widget class="QScrollBar" name="horizontalScrollBar_2">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>660</y>
+      <x>540</x>
+      <y>610</y>
       <width>160</width>
       <height>16</height>
      </rect>
@@ -1386,7 +1386,7 @@ QProgressBar::chunk {
     <property name="geometry">
      <rect>
       <x>360</x>
-      <y>610</y>
+      <y>580</y>
       <width>89</width>
       <height>25</height>
      </rect>
@@ -1422,7 +1422,7 @@ QProgressBar::chunk {
     <property name="geometry">
      <rect>
       <x>260</x>
-      <y>710</y>
+      <y>640</y>
       <width>89</width>
       <height>25</height>
      </rect>
@@ -1434,8 +1434,8 @@ QProgressBar::chunk {
    <widget class="QPushButton" name="pushButton_7">
     <property name="geometry">
      <rect>
-      <x>390</x>
-      <y>710</y>
+      <x>370</x>
+      <y>640</y>
       <width>89</width>
       <height>25</height>
      </rect>
@@ -1448,7 +1448,7 @@ QProgressBar::chunk {
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>610</y>
+      <y>580</y>
       <width>131</width>
       <height>25</height>
      </rect>
@@ -1464,7 +1464,7 @@ QProgressBar::chunk {
      <x>0</x>
      <y>0</y>
      <width>1104</width>
-     <height>22</height>
+     <height>19</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuTest_App">

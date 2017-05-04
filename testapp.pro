@@ -5,11 +5,12 @@
 #-------------------------------------------------
 
 QT       += core gui
-QT       += sql
-QT       += webenginewidgets
+#QT       += sql
+#QT       += webenginewidgets
+#unix: CONFIG	+= link_pkgconfig
+#unix: PKGCONFIG += gtk+-3.0
 
-
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+#greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = testapp
 TEMPLATE = app
@@ -17,18 +18,18 @@ TEMPLATE = app
 LIBS += -L/usr/local/lib
 LIBS += -lopencv_core
 LIBS += -lopencv_imgproc
-LIBS += -lopencv_highgui
+# LIBS += -lopencv_highgui
 LIBS += -lopencv_ml
 LIBS += -lopencv_videoio
 LIBS += -lopencv_features2d
 LIBS += -lopencv_calib3d
 LIBS += -lopencv_objdetect
-LIBS += -lopencv_contrib
-LIBS += -lopencv_legacy
+# LIBS += -lopencv_contrib
+# LIBS += -lopencv_legacy
 LIBS += -lopencv_flann
 LIBS += -lopencv_superres
 LIBS += -lopencv_imgcodecs
-LIBS += -lR
+#LIBS += -lR
 #LIBS += -lpq
 #LIBS += -lopencv_nonfree
 
@@ -46,7 +47,7 @@ HEADERS  += mainwindow.h \
 FORMS    += mainwindow.ui \
     testdialog.ui
 
-INCLUDEPATH += /usr/lib/R/site-library/Rcpp/include
-INCLUDEPATH += /usr/share/R/include
+#INCLUDEPATH += /usr/lib/R/site-library/Rcpp/include
+#INCLUDEPATH += /usr/share/R/include
 
-QMAKE_CXXFLAGS += -Wno-extra # seems not to work, still warnings about RCPP_CTOR_ASSIGN (rcpp)
+#QMAKE_CXXFLAGS += -Wno-extra # seems not to work, still warnings about RCPP_CTOR_ASSIGN (rcpp)

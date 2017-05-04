@@ -6,10 +6,10 @@
 #include <QMessageBox>
 #include <player.h>
 #include <tools.h>
-#include <QSqlDatabase>
-#include <QtSql>
+//#include <QSqlDatabase>
+//#include <QtSql>
 #include <QMessageBox>
-#include <QtWebEngineWidgets>
+//#include <QtWebEngineWidgets>
 #include <testdialog.h>
 
 namespace Ui {

@@ -174,42 +174,42 @@ void MainWindow::on_frameNumberScroll_sliderMoved(int position)
 
 void MainWindow::on_pushButton_6_clicked()
 {
-    QSqlDatabase db = QSqlDatabase::addDatabase("QPSQL");
-    db.setHostName("jalapeno");
-    db.setDatabaseName("daisi");
-    db.setUserName("hel");
-    db.setPassword("hel");
-    //db.setConnectOptions(); // SSL?
-    db.setPort(5432);
-    bool ok = db.open();
-    if(ok != true)
-    {
-        QMessageBox::information(this,"Connection","Connection Failed!") ;
-    }
-    QSqlQuery myQuery;
-    ok = myQuery.prepare("select version();");
-    if(ok != true)
-    {
-        QMessageBox::information(this,"Query","Preparation Failed!") ;
-        return;
-    }
+//    QSqlDatabase db = QSqlDatabase::addDatabase("QPSQL");
+//    db.setHostName("jalapeno");
+//    db.setDatabaseName("daisi");
+//    db.setUserName("hel");
+//    db.setPassword("hel");
+//    //db.setConnectOptions(); // SSL?
+//    db.setPort(5432);
+//    bool ok = db.open();
+//    if(ok != true)
+//    {
+//        QMessageBox::information(this,"Connection","Connection Failed!") ;
+//    }
+//    QSqlQuery myQuery;
+//    ok = myQuery.prepare("select version();");
+//    if(ok != true)
+//    {
+//        QMessageBox::information(this,"Query","Preparation Failed!") ;
+//        return;
+//    }
 
-    myQuery.exec();
-    myQuery.first(); // seems necessary
-    if (myQuery.isActive())
-    {
-        int myIndex = 0; // first field of result
-        if (!myQuery.isNull(myIndex))
-        {
-            QString myString = myQuery.value(myIndex).toString();
-            QMessageBox::information(this,"Query / Result",myString);
-        }
-    }
-    myQuery.finish();
-    //db.commit();        // before or after query clear?
-    myQuery.clear();
+//    myQuery.exec();
+//    myQuery.first(); // seems necessary
+//    if (myQuery.isActive())
+//    {
+//        int myIndex = 0; // first field of result
+//        if (!myQuery.isNull(myIndex))
+//        {
+//            QString myString = myQuery.value(myIndex).toString();
+//            QMessageBox::information(this,"Query / Result",myString);
+//        }
+//    }
+//    myQuery.finish();
+//    //db.commit();        // before or after query clear?
+//    myQuery.clear();
 
-    db.close();
+//    db.close();
 
 
 
@@ -231,10 +231,10 @@ void MainWindow::on_myTestButton_clicked()
 
     cv::Mat test = Mat::zeros(500,500,CV_8UC3);
 
-    cv::namedWindow( "Display window", WINDOW_AUTOSIZE );// Create a window for display.
-    cv::imshow( "Display window", test );                   // Show our image inside it.
+//    cv::namedWindow( "Display window", WINDOW_AUTOSIZE );// Create a window for display.
+//    cv::imshow( "Display window", test );                   // Show our image inside it.
 
-    waitKey(0);                                          // Wait for a keystroke in the window
+    //waitKey(0);                                          // Wait for a keystroke in the window
     return;
 
 }

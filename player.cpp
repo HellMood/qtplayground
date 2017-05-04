@@ -7,7 +7,7 @@ Player::Player(QObject *parent)
 }
 void Player::KillCapture(void)
 {
-    if (capture != nullptr)
+    if (capture != 0)
          capture->release();
 }
 bool Player::loadVideo(std::string filename) {
